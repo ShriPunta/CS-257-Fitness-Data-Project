@@ -1,2 +1,2 @@
-# CS-257-Fitness-Data-Project
+# CS-257-GeoSpatial-Database
 Repository for the CS 257 project
