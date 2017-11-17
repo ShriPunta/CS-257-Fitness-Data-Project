@@ -26,7 +26,7 @@ def enter_dir(curr_filepath):
     return
 
 def defin_header():
-    return (r"Latitude,Longitude,dele_colum,Altitude,dele_colum,Date,Time")
+    return (r"Lat,Long,dele_colum,Altitude,dele_colum,Date,Time")
 
 #delete first 6 lines and a header
 def del_start_lines(filename):
