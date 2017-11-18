@@ -1,10 +1,11 @@
 import pandas as pd
 import glob
 import time
+
 start_time = time.time()
 
 
-base_dir = r'C:\Users\shrip\Downloads\Geolife Trajectories 1.3\Data\\'   # use your path
+base_dir = r'C:\Users\shrip\Downloads\Geolife Trajectories 1.3\Data\000\\'   # use your path
 #all_files = glob.glob(os.path.join(base_dir, "*.csv"))     # advisable to use os.path.join as this makes concatenation OS independent
 
 all_filenames = []

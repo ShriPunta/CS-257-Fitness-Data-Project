@@ -1,7 +1,7 @@
 import os
 import random
 
-base_dir = r'C:\Users\shrip\Pictures\url_downloads\test\\'
+base_dir = r'C:\Users\shrip\Pictures\url_downloads\test\PLTs\\'
 
 
 def enter_dir(curr_filepath):
@@ -18,15 +18,15 @@ def enter_dir(curr_filepath):
         ind = filepath.find('.')
         print(ind)
         if ext == ".plt":
-            os.rename(filepath,filepath[0:ind]+rand_name+".txt")
+            os.rename(filepath,filepath[0:ind]+rand_name+".csv")
             print('-----------')
-        elif ext == ".txt":
-            os.rename(filepath, filepath[0:ind]+rand_name+ ".csv")
-            print('-#####-')
+    ''' elif ext == ".txt":
+          os.rename(filepath, filepath[0:ind]+rand_name+ ".csv")
+        print('-#####-')'''
     return
 
 def defin_header():
-    return (r"Lat,Long,dele_colum,Altitude,dele_colum,Date,Time")
+    return (r"lat,lon,name,Altitude,dele_colum,Date,Time")
 
 #delete first 6 lines and a header
 def del_start_lines(filename):
