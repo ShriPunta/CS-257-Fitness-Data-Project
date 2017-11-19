@@ -12,6 +12,7 @@ min_long_from_file = []
 base_dir = '' #Use your path
 #all_files = glob.glob(os.path.join(base_dir, "*.csv"))     # advisable to use os.path.join as this makes concatenation OS independent
 
+Test_GIT = 'abcde'
 
 def query_csv_filepaths(curr_dir):
    #print('enterd')
