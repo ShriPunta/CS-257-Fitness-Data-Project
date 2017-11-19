@@ -3,7 +3,6 @@ import random
 import time
 import glob
 
-base_dir = r'C:\Users\shrip\Pictures\url_downloads\test\PLTs\\'
 
 all_nfile_paths_list = []
 def fill_list_of_filenames(curr_filepath):
