@@ -5,14 +5,27 @@ import time
 start_time = time.time()
 
 
-base_dir = r'C:\Users\shrip\Downloads\Geolife Trajectories 1.3\Data\000\\'   # use your path
+base_dir = r'C:\Users\shrip\Pictures\url_downloads\test\PLTs\\'   # use your path
 #all_files = glob.glob(os.path.join(base_dir, "*.csv"))     # advisable to use os.path.join as this makes concatenation OS independent
 
 all_filenames = []
-for filename in glob.glob(base_dir+'/**/*.plt', recursive=True):
+for filename in glob.glob(base_dir+'/**/*.csv', recursive=True):
     all_filenames.append(filename)
 print(len(all_filenames))
 #print(all_filenames)
+i=1
+for each in all_filenames:
+   print(each)
+   try:
+      df = pd.read_csv(each,usecols=[0,1],skipinitialspace=True)
+      df.set_index('lat',inplace=True)
+      print(df)
+   except:
+      print('------')
+      continue
+   #print(df)
+   print(i)
+   i=i+1
 
 df_from_each_file = (pd.read_csv(f,usecols=[0,1],skiprows=6) for f in all_filenames)
 
