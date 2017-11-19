@@ -3,6 +3,8 @@ import random
 import time
 import glob
 
+base_dir = '' #use your own path
+
 
 all_nfile_paths_list = []
 def fill_list_of_filenames(curr_filepath):
