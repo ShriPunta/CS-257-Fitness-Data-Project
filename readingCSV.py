@@ -9,7 +9,7 @@ min_lat_from_file = []
 max_long_from_file = []
 min_long_from_file = []
 
-base_dir = '' #Use your path
+base_dir = r'C:\Users\shrip\Pictures\url_downloads\test\PLTs\\'   # use your path
 #all_files = glob.glob(os.path.join(base_dir, "*.csv"))     # advisable to use os.path.join as this makes concatenation OS independent
 
 Test_GIT = 'abcde'
